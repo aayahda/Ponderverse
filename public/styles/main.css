@@ -4,6 +4,7 @@ html{
 	animation: gradient 15s ease infinite;
 	height: 100vh;display: flex;
      justify-content: center;
+     font-family: 'Inter', sans-serif;
      
 }
 @keyframes gradient {
@@ -68,4 +69,40 @@ body {
 hr{
     width: 500px;
     border-width: 0.5px;
+    margin-bottom: 70px;
+}
+#bookimg{
+     height: 250px;
+     width:fit-content;
+     border: 3px solid #FFC72F; 
+     border-radius: 20px;
+}
+#container3{
+     display: flex;
+     width: 1000px;
+     align-content: flex-start;
+     margin-bottom: 20px;
+}
+#c4{
+     padding-right: 100px;
+}
+#title{
+     color: #FFC72F;
+     font-size: 35px;
+     margin: 0px;
+     font-weight: 500;
+}
+#author{
+     color: white;
+     font-size: 20px;
+     margin-top: 0;
+     font-weight: 300;
+}
+#summary{
+     color: white;
+     font-weight: 200;
+}
+footer{
+     color: white;
+     padding-bottom: 20px;
 }
