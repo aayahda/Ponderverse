@@ -1,14 +1,45 @@
 html{
-     background-image: linear-gradient(to right top, #0e1433, #19143a, #26133f, #331042, #410a44);
-     display: flex;
+     background: linear-gradient(-45deg, #0E1433, #410A44,#e73c7e);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;display: flex;
      justify-content: center;
+     
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 body {
      display: flex;
      flex-direction: column;
      justify-content: stretch;
      min-height: 100vh;
+     align-items: center;
    }
+#container{
+     margin-top: 40px;
+}
+#heading2{
+     color: white;
+     font-family: 'Inter', sans-serif;
+     font-weight: 500;
+     font-size: 70px;    
+}
+#heading3{
+     color:white;
+     font-family: 'Inter',sans-serif;
+     font-weight: 300;
+     font-size: 25px;
+     letter-spacing: 8px;
+}
 .box{
      margin-top: 60px;
      background-color: #FFC72F;
@@ -17,17 +48,24 @@ body {
      align-items: center;
      color: black;
      border-radius: 50px;
+     box-shadow: 0 4px 0px 0 #FFC72F, 0 6px 10px 0 #FFC72F;
      
 }
 .heading{
-      margin:0;
+     margin:0;
      display: flex;
      align-items: center;
      font-family: 'Inter', sans-serif;
      font-weight: 500;
+     color: black;
+     padding-right: 10px;
 }
 .icon{
   width: 50px;
   height: 50px;
   padding-right: 10px;
+}
+hr{
+    width: 500px;
+    border-width: 0.5px;
 }
