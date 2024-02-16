@@ -1,0 +1,13 @@
+html{
+     background-image: linear-gradient(to right top, #0e1433, #19143a, #26133f, #331042, #410a44);;
+}
+body {
+     display: flex;
+     flex-direction: column;
+     justify-content: stretch;
+     min-height: 100vh;
+   }
+
+h1{
+     color: white;
+}
