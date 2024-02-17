@@ -20,6 +20,8 @@ app.use(express.static("public"));
 
 let books=[];
 
+const api="https://covers.openlibrary.org/b/isbn/0014345539-M.jpg"
+
 db.connect();
 // Route
 app.get("/", async(req, res) => {
