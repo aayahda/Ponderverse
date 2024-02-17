@@ -10,12 +10,13 @@
     </h2>
   </div>
   <hr>
+  <% for(let book of bookTitles){%>
   <div id="container3">
     <div id="c4"><img id="bookimg" src="assets/TKR.jpg"></div>
-    <div id="c5"><h3 id="title">The Kite Runner</h3>
-    <h3 id="author">Khalid Hosseni</h3>
-    <h3 id="summary">This is my first ever Khaled Hosseni read and this book came to me during the lowest point of my college life. The time I even started to doubt if Karma is real or not.I would recommend this book to anyone who is going through a tough time. Khaled Hosseni being an extraordinary writer hits the very right spot.Will continue later </h3></div>
+    <div id="c5"><h3 id="title"> <%= book.title %></h3>
+    <h3 id="author"> <%= book.author %></h3>
+    <h3 id="summary"> <%= book.summary %></h3></div>
   </div>
   <hr>
-
+  <% } %>
   <%- include('footer.ejs'); -%>
